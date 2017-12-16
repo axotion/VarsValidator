@@ -1,6 +1,16 @@
 # VarsValidator
 Validate variables in PHP
 
+## Requirements
+
+```
+>=PHP7.1
+```
+
+## Install
+```
+composer require evilnet/validator
+```
 ## Example of usage
 
 ```php
