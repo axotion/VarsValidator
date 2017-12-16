@@ -1,0 +1,19 @@
+{
+    "name": "evilnet/validator",
+    "description": "Simple package for validate arrays",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "axotion",
+            "email": "axotion@linux.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\":"src/"
+        }
+    }
+}
