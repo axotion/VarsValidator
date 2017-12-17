@@ -49,4 +49,4 @@ array(1) { ["errors"]=> array(4) { ["MinimumChar"]=> string(38) "Passed variable
 
 ## New rule
 
-If you want crate your own rule just implement App\Validator\Rules\Contracts\IRule interface and pass your vars via constructor
+If you want to create your own rule just implement App\Validator\Rules\Contracts\IRule interface and pass your vars via constructor

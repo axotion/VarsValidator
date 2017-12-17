@@ -9,13 +9,13 @@ class Validator
     protected $fails = [];
     protected $messages = [];
 
-    public function validate(IRule $rule)
+    public function validate(IRule $rule, $key)
     {
         if ($rule->check()) {
             $this->fails[] = false;
         } else {
             $this->fails[] = true;
-            $this->messages['errors'][$rule->getNameOfClass()] = $rule->message();
+            $this->messages['errors'][$key][$rule->getNameOfClass()] = $rule->message();
         }
         return $this;
     }
