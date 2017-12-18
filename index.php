@@ -18,7 +18,7 @@ $empty_string = null;
 $validator->validate(new MinimumChar($string, 5), 'string')
     ->validate(new MaxChar($string, 2), 'string')
     ->validate(new ContainRule($string, 'w0r3'), 'string')
-    ->validate(new RequiredRule($empty_string, 'empty_string'), 'empty_string');
+    ->validate(new RequiredRule($empty_string), 'empty_string');
 
 if ($validator->fails()) {
     var_dump($validator->messages());

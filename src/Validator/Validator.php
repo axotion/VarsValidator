@@ -15,7 +15,7 @@ class Validator
             $this->fails[] = false;
         } else {
             $this->fails[] = true;
-            $this->messages['errors'][$key][$rule->getNameOfClass()] = $rule->message();
+            $this->messages['errors'][$key][][$rule->getNameOfClass()] = $rule->message();
         }
         return $this;
     }
